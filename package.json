@@ -1,0 +1,11 @@
+{
+  "name": "aspirenexchatbot",
+  "version": "1.0.0",
+  "description": "CHATBOT WITH RULE-BASED RESPONSES",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek Anand",
+  "license": "ISC"
+}

@@ -1,0 +1,660 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    
+    font-weight: 400;
+    font-size: 100%;
+    background: #F1F1F1;
+}
+
+*, html {
+    --primaryGradient: linear-gradient(93.12deg, #0c4fcb 0.52%, #1B3058 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #1e4fa9 -2.14%, #1B3058 99.69%);
+    --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
+    --primary: #1B3058;
+}
+
+/* CHATBOX
+=============== */
+.chatbox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+/* CONTENT IS CLOSE */
+.chatbox__support {
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    width: 300px;
+    height: 350px;
+    z-index: -123456;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* CONTENT ISOPEN */
+.chatbox--active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
+
+}
+
+/* BUTTON */
+.chatbox__button {
+  position: fixed; 
+  bottom: 20px;   
+  right: 20px;     
+  z-index: 1000;
+  background-color: transparent;
+}
+
+.send__button {
+    padding: 6px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* HEADER */
+.chatbox__header {
+    position: sticky;
+    top: 0;
+    background: orange;
+}
+
+
+/* MESSAGES */
+.chatbox__messages {
+    margin-top: auto;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages__item {
+    background: orange;
+    max-width: 60.6%;
+    width: fit-content;
+}
+
+.messages__item--operator {
+    margin-left: auto;
+}
+
+.messages__item--visitor {
+    margin-right: auto;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    position: sticky;
+    bottom: 0;
+}
+
+.chatbox__support {
+    background: #f9f9f9;
+    height: 450px;
+    width: 350px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: fixed; 
+    bottom: 50px;   
+    right: 20px;     
+  z-index: 1000;
+}
+
+/* HEADER */
+.chatbox__header {
+    background: var(--primaryGradient);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: var(--primaryBoxShadow);
+}
+
+.chatbox__image--header {
+    margin-right: 10px;
+    background-size: cover;
+}
+
+.chatbox__heading--header {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.chatbox__description--header {
+    font-size: .9rem;
+    color: white;
+}
+
+/* Messages */
+.chatbox__messages {
+    padding: 0 20px;
+}
+
+.messages__item {
+    margin-top: 10px;
+    background: #E0E0E0;
+    padding: 8px 12px;
+    max-width: 70%;
+}
+
+.messages__item--visitor,
+.messages__item--typing {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.messages__item--operator {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: var(--primary);
+    color: white;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: var(--secondaryGradient);
+    box-shadow: var(--secondaryBoxShadow);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 20px;
+}
+
+.chatbox__footer input {
+    width: 80%;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    text-align: left;
+}
+
+.chatbox__send--footer {
+    color: white;
+}
+
+.chatbox__button button,
+.chatbox__button button:focus,
+.chatbox__button button:visited {
+    padding: 10px;
+    background: white;
+    border: none;
+    outline: none;
+    color: #0c4fcb;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+/********** Common CSS Starts **********/  
+* {
+   margin:0px;
+   padding:0px;
+}
+body, html {
+   font-family: Roboto, sans-serif, arial;
+   background:#f0f3fa; 
+}
+   .width-100 {
+      width:100%;
+      float:left;
+   }
+   .width-20 {
+      width:20%;
+      float:left;
+   }
+   .width-25 {
+      width:25%;
+      float:left;
+   }
+   .width-30 {
+      width:30%;
+      float:left;
+}
+.width-33 {
+   width:33%;
+   float:left;
+}
+.width-40 {
+   width:40%;
+   float:left;
+}
+.width-50 {
+   width:50%;
+   float:left;
+}
+.width-60 {
+   width:60%;
+   float:left;
+}
+.width-70 {
+   width:70%;
+   float:left;
+}
+.width-80 {
+   width:80%;
+   float:left;
+}
+.width-90 {
+   width:90%;
+   float:left;
+}
+.width-10 {
+   width:10%;
+   float:left;
+}
+.container {
+   width:1500px;
+   margin:0 auto;
+}
+.plr {
+   padding-left:100px;
+   padding-right:100px;
+}
+.margin-top-50 {
+   margin-top:50px;
+}
+
+/********** Top Header Starts **********/  
+.top-header {
+   background:#2196f3;
+   padding:5px 0px;
+   border-bottom: 1px solid #3131315e;
+}
+.news-list {
+   background: #fff;
+   color: red;
+   padding: 6px;
+   font-size: 20px;
+}
+.headquote {
+   font-size:18px;
+   color:#ffffff;
+   width:80%;
+}
+/********** Top Header Ends **********/
+/********** Logo And Menu Starts **********/  
+.header-menu {
+   position: relative;
+   box-shadow: 0px 2px 5px 0px #00000036;
+}
+.logo {
+   width: fit-content;
+   float: left;
+}
+.main-menu {
+   list-style:none;
+   float:right;
+   margin-top: 20px;
+}
+.main-menu a {
+   font-weight: 500;
+   color: #3a3a3a;
+   font-size: 20px;
+   text-decoration: none;
+}
+.main-menu li {
+   float:left;
+   padding:12px 15px;
+}
+/********** Logo And Menu Ends **********/
+/********** Slider Starts **********/  
+.slider-width{
+   width: 100%;
+   height: auto;
+}
+
+
+/********** Slider Ends **********/
+/********** Latest News, Event, Notice Board Starts **********/  
+.latest-news{
+   margin-left:10px;
+   margin-right:10px;
+   background:#fff;
+   padding:20px;
+   height:350px;
+   margin-bottom:30px;
+}
+.event-list{
+   margin-left:10px;
+   margin-right:10px;
+   background:#fff;
+   padding:20px;
+   height:350px;
+   margin-bottom:30px;
+}
+.notice-board{
+   margin-left:10px;
+   margin-right:10px;
+   background:#fff;
+   padding:20px;
+   height:350px;
+   margin-bottom:30px;
+}
+.our-principal{
+   margin-left:10px;
+   margin-right:10px;
+   background:#fff;
+   padding:20px;
+   height:350px;
+   margin-bottom:30px;
+}
+.about-us{
+   margin-left:10px;
+   margin-right:10px;
+   background:#fff;
+   padding:20px;
+   height:350px;
+   margin-bottom:30px;
+}
+.certificate{
+   margin-left:10px;
+   margin-right:10px;
+   background:#fff;
+   padding:20px;
+   height:350px;
+   margin-bottom:30px;
+}
+.heading-sect{
+   width: 100%;
+   float: left;
+   border-bottom: 1px solid #cfcfcf;
+   padding-bottom: 0px;
+   margin: 0px;
+   margin-bottom: 15px;
+   padding-top: 2px;
+   border: 1px solid #cfcfcf;
+   padding-bottom: 10px;
+   padding-top: 15px;
+   padding-left: 15px;
+   background: #00aed9;
+   color:white;
+}
+.heading-sect h3{
+   color:white;
+}
+.head-title {
+   margin: 0px;
+   padding: 0px;
+   font-size: 16px;
+   font-weight: 600;
+   font-family: 'Roboto', sans-serif!important;
+   color: #2196f3;
+   padding-bottom: 5px;
+}
+.upcoming-event-list li {
+   width: 100%;
+   float: left;
+   margin-bottom: 15px;
+}
+.upcoming-event-list{
+   padding:0px;
+  list-style:none;
+}
+.event-date {
+   background: #03a9f4;
+   width: 30px;
+   float: left;
+   text-align: center;
+   font-size:14px;
+   color: #fff;
+   padding:8px;
+   margin-right: 10px;
+}
+.notice-board-list li {
+   width: 100%;
+   float: left;
+   margin-bottom: 15px;
+}
+.notice-board-list{
+   padding:0px;
+   list-style:none;
+}
+.latest-news-ul{
+   padding:0px;
+  list-style:none;
+  line-height: 40px;
+}
+/********** Latest News, Event, Notice Board Ends **********/
+/********** Information Starts **********/  
+.useful-info-ul{
+   list-style:none;
+}
+.useful-info-ul a{
+   text-decoration:none;
+   color:black;
+   font-weight:bold;
+}
+.useful-info-ul li{
+   margin-bottom:15px;
+   border-bottom: 1px solid #d7d7d7;
+   padding-bottom: 15px;
+}
+.principal-image{
+   text-align:center 
+}
+.principal-image img{
+   height:230px;
+}
+.principal-para{
+   font-weight:bold;
+}
+/********** Information Ends **********/
+/********** Gallery Starts **********/  
+.gallery-img{
+   height:250px;
+   width:100%;
+}
+
+.governor-img{
+   width: 70%;
+}
+.governor-name{
+   font-size: 16px;
+   color: black;
+   font-weight: bold;
+   padding-left: 10px;
+   margin-top: 20px;
+}
+.governor-designation{
+   font-size: 15px;
+   color: black;
+   padding-left: 10px;
+   margin-top: 6px;
+}
+.gove-sec-style{
+   margin-bottom: 30px;
+   border-bottom: 1px solid #d7d7d7;
+   padding-bottom: 30px;
+}
+.gallery-head-style{
+   font-size: 28px;
+   color: #4b4848;
+   margin-bottom: 5px;
+   border: 1px solid #cfcfcf;
+   padding-bottom: 10px;
+   padding-top: 15px;
+   padding-left: 15px;
+   background: #00aed9;
+   background: white;
+   border: none;
+   padding: 2px 0px;
+}
+/********** Gallery Ends **********/
+/********** Recruiter List Starts **********/  
+.recruiter-head-style{
+   font-size: 28px;
+   color: #4b4848;
+   margin-bottom: 5px;
+}
+.recruiter-marquee{
+   height: 100px;
+}
+.recruiter-marquee img{
+   height:80px;
+   width:140px;
+}
+/********** Recruiter List Ends **********/
+/********** Footer Starts **********/  
+.footer {
+   background: #232F3E;
+   padding: 50px 0px;
+}
+.quicklink-menu {
+   list-style:none;
+   padding-left: 10px;
+}
+.quicklink-menu li a {
+   color: #fff;
+   line-height: 2.5;
+   font-size: 15px;
+   text-decoration:none;
+}
+.social-media {
+   list-style:none;
+   margin-top:10px;
+}
+.social-media li a img {
+   width:30px;
+}
+.social-media li {
+   float:left;
+   padding:0px 8px;
+}
+.quicklink-heading {
+   font-size:18px;
+   font-weight:bold; 
+   color:#fff;
+   margin-bottom:10px;
+}
+.get-in-touch {
+   list-style:none;
+   padding-left: 10px;
+}
+.get-in-touch li i {
+   color: #ed372c;
+   font-size: 20px;
+}
+.get-in-touch li {
+   color: #fff;
+   line-height: 2.5;
+   font-size: 15px;
+   text-decoration:none;
+}
+.footer-e-mail {
+   font-size:15px;
+   font-weight:bold;
+   color:#fff;
+   text-decoration:none;
+}
+.footer-website {
+   font-size:12px;
+   font-weight:bold;
+   color:#fff;
+   text-decoration:none;
+}
+/********** Footer Ends **********/
+/********** Footer Copyright Starts **********/  
+.footer2-bacbor {
+   background: #232F3E;
+   padding:10px 0px;
+   border-top: 1px solid #898989;
+}
+.footer2-content {
+   font-size:14px;
+   color:#fff;
+   text-align:center;
+}
+/********** Footer Copyright Ends **********/
+
+@media only screen and (max-width: 600px) {
+
+   .banner{
+      padding: 10px;
+   }
+   .main-menu{
+      display: none;
+   }
+   .headquote{
+      display: flex;
+      height: 0px;
+   }
+   .container {
+      max-width: 600px;
+      
+      
+   }
+   .logo{
+      margin-left: 80px;
+      background-color: #F1F1F1;
+   }
+   .boxess {
+      display: grid;
+      margin: 20px;
+   }
+
+   .latest-news {
+      width: 550px;
+   }
+   .event-list {
+      width: 550px;
+   }
+   .notice-board{
+      width: 550px;
+   }
+
+   .our-principal{
+      width: 550px;
+   }
+   .about-us{
+      width: 550px;
+   }
+   .certificate{
+      width: 550px;
+   }
+   .gall .gallery-img{
+      width: 550px;
+   }
+   .recruiter-head-style{
+      margin-left: 10px;
+   }
+   .recruiter-marquee{
+      margin-left: 20px;
+   }
+   .two{ 
+      display: flex;
+      justify-content: space-evenly;
+   }
+   .one{
+      width: 300px;
+   }
+   .news-list{
+
+   }
+   
+}
