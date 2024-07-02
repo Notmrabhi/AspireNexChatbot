@@ -48,4 +48,16 @@ def get_response(msg):
     return "I'm sorry, I don't understand that. Can you please rephrase?"
 
 
+if __name__ == "__main__":
+    print("Let's chat! (type 'quit' to exit)")
+    while True:
+        # sentence = "do you use credit cards?"
+        sentence = input("You: ")
+        if sentence == "quit":
+            break
+
+        resp = get_response(sentence)
+        print(resp)
+
+
 
