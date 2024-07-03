@@ -2,11 +2,11 @@
 
 ## Tech Stack
 Tech Stack Used
-Python: Programming language used for developing the chatbot.
-PyTorch: Framework for building and training the neural network.
-Flask: Micro web framework used for deploying the chatbot as a web application.
-NLTK (Natural Language Toolkit): Library for natural language processing, used for tokenization and preprocessing text data.
-HTML, CSS AND JS - Used for creating the frontend of the web application, providing a user-friendly interface for interacting with the chatbot.
+1. Python: Programming language used for developing the chatbot.
+2. PyTorch: Framework for building and training the neural network.
+3. Flask: Micro web framework used for deploying the chatbot as a web application.
+4. NLTK (Natural Language Toolkit): Library for natural language processing, used for tokenization and preprocessing text data.
+5. HTML, CSS AND JS - Used for creating the frontend of the web application, providing a user-friendly interface for interacting with the chatbot.
 
 ## Initial Setup for Chatbot Deployment
 
