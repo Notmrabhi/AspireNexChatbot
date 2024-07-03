@@ -1,0 +1,561 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "hy",
+        "hi",
+        "hye"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what's up,how can I help you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "about_collage",
+      "patterns": [
+        "Tell me about the collage",
+        "Information about HIT",
+        "HIT Haldia details",
+        "list of programs in HIT",
+        "Can you tell me something about Haldia Institute of Technology",
+        "I'd like to know more about HIT Haldia",
+        "What is HIT affiliated with?" 
+      ],
+      "responses": [
+        "Haldia Institute of Technology (HIT) is an autonomous engineering institute in Haldia, West Bengal, India. It is approved by AICTE and affiliated with MAKAUT.",
+        "HIT offers undergraduate (B.Tech) and postgraduate (M.Tech) programs in engineering, along with MCA and MBA courses.",
+        "The institute has a well-equipped campus with administrative blocks, academic buildings, hostels, a library, and various other facilities."
+      ]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "What courses does HIT offer?",
+        "HIT programs",
+        "Courses at Haldia Institute of Technology",
+        "What undergraduate B.Tech programs does HIT offer?",
+        "I'm interested in postgraduate M.Tech programs at HIT",
+        "What courses are offered in the upcoming semester at HIT?",
+        "Does HIT offer a B.Tech in Computer Science and Engineering, Aeronautical Engineering, Mechanical Engineering, Automobile Engineering, BiotechnologyBTech, Electrical Engineering, Civil Engineering, Electrical engineering",
+        "What are the specializations available in the M.Tech in Computer Science program?",
+        "Does the MBA program at HIT have a focus on Entrepreneurship?"
+      ],
+      "responses": [
+        "HIT offers a wide range of undergraduate (B.Tech) and postgraduate (M.Tech) programs in engineering, along with MCA and MBA courses. You can find the complete list of courses on their <a href='https://www.hithaldia.in/course-list.html' target='_blank'>Click here</a>."
+      ]
+    },
+    {
+      "tag": "campus",
+      "patterns": [
+        "Tell me about HIT campus",
+        "What facilities does HIT offer?",
+        "Describe the HIT campus",
+        "Campus details",
+        "Facilities at HIT",
+        "What can I find on HIT campus?",
+        "HIT campus facilities",
+        "What amenities are available at HIT?",
+        "Details about HIT infrastructure",
+        "What sports facilities does HIT have?",
+        "HIT campus overview",
+        "What does HIT campus include?"
+      ],
+      "responses": [
+        "The HIT campus spans approximately 37 acres and includes a variety of facilities. These include administrative and academic blocks, student hostels, a library, departmental store, post office, laundry, medical store, bank, ATM, restaurant, open-air cafeteria, and a recreational building.",
+        "HIT provides extensive sports facilities, including a football ground, basketball court, and cricket ground.",
+        "Our campus offers comprehensive facilities such as a library, gymnasium, cafeteria, student housing, and various sports amenities."
+      ]
+    },
+    {
+      "tag": "hostels",
+      "patterns": [
+        "Tell me about HIT hostels",
+        "HIT accommodation",
+        "Hostel facilities at Haldia Institute of Technology",
+        "Accommodation options at HIT",
+        "Boys hostels at HIT",
+        "Girls hostels at HIT",
+        "Hostel details for HIT",
+        "Living arrangements at HIT",
+        "Housing facilities at Haldia Institute of Technology",
+        "Where do students stay at HIT?"
+      ],
+      "responses": [
+        "HIT provides separate housing facilities for boys and girls. The boys' hostels include Newton Hall of Residence, Galileo Hall of Residence, Ranichak Boys Hostel, and Balaji Boys Hostel. The girls' hostels include Tamalika Ponda Seth Hall of Residence and Matangini Hall of Residence.",
+        "At HIT, students have access to well-maintained accommodation. Boys can stay in Newton Hall of Residence, Galileo Hall of Residence, Ranichak Boys Hostel, or Balaji Boys Hostel. Girls can stay in Tamalika Ponda Seth Hall of Residence or Matangini Hall of Residence.",
+        "Haldia Institute of Technology offers separate hostels for boys and girls. Boys' hostels are Newton Hall of Residence, Galileo Hall of Residence, Ranichak Boys Hostel, and Balaji Boys Hostel. Girls' hostels are Tamalika Ponda Seth Hall of Residence and Matangini Hall of Residence."
+      ]
+    },
+    {
+      "tag": "hostel_fee",
+      "patterns": [
+        "Hostel charges",
+        "Hostel fee and food",
+        "Hostel fee and fooding",
+        "HIT loging and fooding"
+      ],
+      "responses": [
+        "The hostel fee is around 12,000 rupees per semester, which is around 2000 rupees per month. This is for lodging only. There is also a 5,000 rupee kasul fee that is returned after completing the degree . The mess at Haldia Institute of Technology (HIT) offers a variety of food at different prices. Students pay for what they eat at the end of the month."
+      ]
+    },
+    {
+      "tag": "departments",
+      "patterns": [
+        "HIT schools and departments",
+        "Academic departments at Haldia Institute of Technology",
+        "Undergraduate departments at HIT",
+        "branch of study",
+        "branches available to study"
+      ],
+      "responses": [
+        "Haldia of Technology offers many branches which includs Chemical Engineering, Computer Science & Engineering, Applied Electronics & Instrumentation Engineering, Electronics & Communication Engineering, Mechanical Engineering, Information Technology, Electrical Engineering.",
+        "HIT has schools and departments including School of Engineering, School of Applied Sciences & Humanities, School of Chemical, Food & BioTechnology, and School of Electronics, Computer & Informatics.",
+        "Undergraduate departments include Mechanical Engineering, Electrical Engineering, Applied Electronics and Instrumentation Engineering, Civil Engineering, Applied Sciences, Chemical Engineering, Biotechnology, Food Technology, Computer Science and Engineering, Information Technology, and Electronic and Communications Engineering."
+      ]
+    },
+    {
+      "tag": "student life",
+      "patterns": [
+        "HIT student life",
+        "Cultural and non-academic activities at Haldia Institute of Technology",
+        "Student clubs at HIT"
+      ],
+      "responses": [
+        "HIT hosts the annual Science & Technology festival 'PRAYUKTI' and the yearly cultural festival 'RIVIERA' held in May-June.",
+        "Student life involves various cultural and non-academic activities, and students participate in clubs and festivals."
+      ]
+    },
+    {
+      "tag": "ranking",
+      "patterns": [
+        "HIT ranking in 2022",
+        "Collage ranking",
+        "NIRF ranking of Haldia Institute of Technology in 2022",
+        "Engineering college rankings in 2022"
+      ],
+      "responses": [
+        "HIT is ranked in the #251 - 300 band among engineering colleges in India by the National Institutional Ranking Framework (NIRF) in 2022 and 109th out of 170 among the engineering colleges by Indian Institutional Ranking Framework (IIRF)"
+      ]
+    },
+    {
+      "tag": "admission process",
+      "patterns": [
+        "HIT B.Tech admission process",
+        "How to get into Haldia Institute of Technology for B.Tech?",
+        "WBJEE and JEE(main) for HIT admission"
+      ],
+      "responses": [
+        "For B.Tech course, one has to clear the state-level entrance exam WBJEE or JEE(main) and JELET is the exam for 2nd-year lateral entry B.Tech course."
+      ]
+    },
+    {
+      "tag": "placement_info",
+      "patterns": [
+        "Chemical Engineering placement at HIT",
+        "HIT Chemical Engineering placement",
+        "Average package in Chemical Engineering at HIT",
+        "Chemical Engineering Department placement",
+        "Best branch"
+      ],
+      "responses": [
+        "Haldia Institute of Technology (HIT) provides the best placement in the Chemical Engineering Department, with an average package of 8 - 9 LPA.",
+        "Our commitment to academic excellence and industry relevance ensures that our students secure rewarding opportunities in the field of Chemical Engineering."
+      ]
+    },
+    {
+      "tag": "companies",
+      "patterns": [
+        "Companies visited in 2023-2024",
+        "Placements in 2023-2024",
+        "Which companies visited HIT recently?"
+      ],
+      "responses": [
+        "In the academic year 2023-2024, prominent companies that visited Haldia Institute of Technology include Cognizant, Infosys, Wisdom LAB, IBM, Tech Mahindra, CS Automation, Jubilant Foodworks, Axis bank, Accenture, Just Dial, Berger Paints, and Huawei. You can check the complete list <a href='https://hithaldia.ac.in/wp-content/uploads/2021/08/Frequent-recruiters-all-dept.pdf' target='_blank'>here</a>."
+      ]
+    },
+    {
+      "tag": "placement companies 2023",
+      "patterns": [
+        "Companies visited in 2023",
+        "Placements in 2023",
+        "Tell me about the companies in 2023"
+      ],
+      "responses": [
+        "In the academic year 2022-2023, companies that visited HIT for placements include CTS, Infosys, Wipro, Accenture, Hitech, Ultratech Cement, Berger Paints, Karvy, HSBC, Adani Wilmar, AIS, Kreeti Technologies, XEBIA, Huwaei, and Learning Mate. You can check the complete list <a href='https://hithaldia.ac.in/wp-content/uploads/2021/08/Frequent-recruiters-all-dept.pdf' target='_blank'>here</a>."
+      ]
+    },
+    {
+      "tag": "companies",
+      "patterns": [
+        "Other companies",
+        "Companies in other years",
+        "List of companies in TCS, HPL, IBM",
+        "Which companies visited recently?",
+        "Tell me about the companies visiting for placements",
+        "Placement companies",
+        "Companies offering jobs",
+        "Recruiters at HIT",
+        "Who are the recruiters?",
+        "Who visits for campus placements?",
+        "Companies participating in placements",
+        "Placement drives companies",
+        "Firms that come for recruitment",
+        "Organizations hiring from HIT",
+        "Corporate visitors for placements",
+        "Companies that offer placements",
+        "Which firms recruit from HIT?",
+        "Top recruiters",
+        "Can you list the companies for placements?",
+        "Details of companies visiting HIT"
+      ],
+      "responses": [
+        "In addition to the mentioned years, other notable companies that visited HIT include TCS, HPL, and IBM for placements.",
+        "You can check the complete list  <a href='https://hithaldia.ac.in/wp-content/uploads/2021/08/Frequent-recruiters-all-dept.pdf' target='_blank'>here</a>."
+      ]
+    },
+    {
+      "tag": "exam form",
+      "patterns": [
+        "Where can I fill the exam form?",
+        "How to fill the exam form?",
+        "Exam form submission",
+        "Fill out the exam form",
+        "Where do I submit my exam form?",
+        "Exam form filling process",
+        "Exam form portal",
+        "Submit exam form online"
+      ],
+      "responses": [
+        "You can fill the exam form online at Haldia Institute of Technology. Visit the following link to access the form: <a href='https://hit.ucanapply.com/' target='_blank'>Exam Form Portal</a>."
+      ]
+    },
+    {
+      "tag": "backlog",
+      "patterns": [
+        "Where can I fill the backlog form?",
+        "How to fill the backlog form?",
+        "Backlog form submission",
+        "Fill out the backlog form",
+        "Where do I submit my backlog form?",
+        "Backlog form filling process",
+        "Backlog form portal",
+        "Submit backlog form online"
+      ],
+      "responses": [
+        "You can fill the backlog form online at Haldia Institute of Technology. Visit the following link to access the form: <a href='https://hit.ucanapply.com/' target='_blank'>Backlog Form Portal</a>."
+      ]
+    },
+    {
+      "tag": "admit_card",
+      "patterns": [
+        "Where can I download my admit card?",
+        "How to download admit card?",
+        "Admit card download",
+        "Download my admit card",
+        "Where is the admit card download link?",
+        "Admit card portal",
+        "Get my admit card",
+        "Access admit card online"
+      ],
+      "responses": [
+        "You can download your admit card online at Haldia Institute of Technology. Visit the following link to access your admit card: <a href='https://hit.ucanapply.com/' target='_blank'>Admit Card Download</a>."
+      ]
+    },
+    {
+      "tag": "exam_fee",
+      "patterns": [
+        "Where can I pay my exam fee?",
+        "How to pay the exam fee?",
+        "Exam fee payment",
+        "Pay my exam fee",
+        "Where is the exam fee payment link?",
+        "Exam fee portal",
+        "Submit exam fee online",
+        "Exam fee submission"
+      ],
+      "responses": [
+        "You can pay your exam fee online at Haldia Institute of Technology. Visit the following link to make the payment: <a href='https://hit.ucanapply.com/' target='_blank'>Exam Fee Payment</a>."
+      ]
+    },
+    {
+      "tag": "result",
+      "patterns": [
+        "Where can I check my semester result?",
+        "How to check semester results?",
+        "Semester result download",
+        "Get my semester result",
+        "Where is the semester result link?",
+        "Semester result portal",
+        "Access semester results online",
+        "Check semester results"
+      ],
+      "responses": [
+        "You can check your semester result online at Haldia Institute of Technology. Visit the following link to access your results: <a href='https://hit.ucanapply.com/' target='_blank'>Semester Result Portal</a>."
+      ]
+    },
+    
+    {
+      "tag": "exam_fee",
+      "patterns": [
+        "Where can I pay my exam fee?",
+        "How to pay the exam fee?",
+        "Exam fee payment",
+        "Pay my exam fee",
+        "Where is the exam fee payment link?",
+        "Exam fee portal",
+        "Submit exam fee online",
+        "Exam fee submission"
+      ],
+      "responses": [
+        "You can pay your exam fee online at Haldia Institute of Technology. Visit the following link to make the payment: <a href='https://hit.ucanapply.com/' target='_blank'>Exam Fee Payment</a>."
+      ]
+    },
+
+    {
+      "tag": "hit_location",
+      "patterns": [
+        "Where is Haldia Institute of Technology located?",
+        "Location of HIT",
+        "HIT address",
+        "How to reach Haldia Institute of Technology?",
+        "HIT location map",
+        "Where can I find HIT?",
+        "Haldia Institute of Technology map",
+        "HIT campus location",
+        "Show me the location of HIT",
+        "Where is HIT on the map?"
+      ],
+      "responses": [
+        "Haldia Institute of Technology is located at Hatiberia, ICARE Complex, Dist, Haldia, West Bengal 721657. You can find it on the map here: <a href='https://www.google.com/maps/place/Haldia+Institute+of+Technology/@22.0505921,88.0722126,15z/data=!4m6!3m5!1s0x3a02f0bd0fcacc69:0x409c7ac845fe6280!8m2!3d22.0505921!4d88.0722126!16s%2Fm%2F02vz19p?entry=ttu' target='_blank'>HIT Location Map</a>."
+      ]
+    },
+    {
+      "tag": "college fee structure",
+      "patterns": [
+        "Can you tell me the fee structure for the college?",
+        "What are the tuition fees?",
+        "How much does it cost to study here?",
+        "Please provide the details of the fee structure.",
+        "What is the fee structure for this college?",
+        "I need information on the college fees.",
+        "What are the fees for the undergraduate program?",
+        "Could you give me the breakdown of the college fees?"
+      ],
+      "responses": [
+        "You can find the detailed fee structure for our college by visiting the following link: <a href='https://hithaldia.ac.in/wp-content/uploads/2024/06/fees-structre.pdf2024.pdf' target='_blank'>Fee Structure</a>. If you have any specific questions, feel free to ask!",
+        "For the complete breakdown of our college fees, please check out this link: <a href='https://hithaldia.ac.in/wp-content/uploads/2024/06/fees-structre.pdf2024.pdf' target='_blank'>Fee Structure</a>. Let me know if you need further assistance.",
+        "The fee structure for our programs can be viewed here: <a href='https://hithaldia.ac.in/wp-content/uploads/2024/06/fees-structre.pdf2024.pdf' target='_blank'>Fee Structure</a>. If you need more information or have any other queries, I'm here to help!",
+        "To get detailed information about our college fees, please visit: <a href='https://hithaldia.ac.in/wp-content/uploads/2024/06/fees-structre.pdf2024.pdf' target='_blank'>Fee Structure</a>. If you have any additional questions, don't hesitate to ask!"
+      ]
+    },
+
+    {
+      "tag": "scholarship_loans",
+      "patterns": [
+        "What scholarships are available?",
+        "Tell me about the scholarship options.",
+        "Are there any loan facilities?",
+        "How can I get a student loan?",
+        "Scholarship opportunities in the college.",
+        "Information on loans for students.",
+        "Financial aid options.",
+        "How to apply for scholarships?",
+        "Scholarships and loan details.",
+        "Funding options for students."
+      ],
+      "responses": [
+        "Our college offers a variety of scholarships and loan options to support students financially. For detailed information, please visit the scholarships and loans section on our website.",
+        "You can explore numerous scholarships based on merit, need, and specific talents. Check out our financial aid office for more details.",
+        "Student loans with favorable terms are available to help cover tuition and other expenses. Contact our financial aid department for guidance."
+      ]
+    },
+    {
+      "tag": "college_societies",
+      "patterns": [
+        "What societies are there in the college?",
+        "Tell me about the student organizations.",
+        "Clubs and societies in the college.",
+        "Which societies can I join?",
+        "Information on college societies.",
+        "What student groups are active on campus?",
+        "List of societies in the college.",
+        "How to join a society?",
+        "Details on college clubs.",
+        "Student organizations in the college."
+      ],
+      "responses": [
+        "Our college has a variety of societies and student organizations, including cultural, technical, and sports clubs. You can find more information on the college website or at the student affairs office.",
+        "Joining a society is a great way to enhance your college experience. We have numerous clubs focusing on arts, technology, sports, and more.",
+        "Participating in student societies helps build skills and networks. Visit our student activities center to learn about all the available options."
+      ]
+    },
+    {
+      "tag": "courses_offered",
+      "patterns": [
+        "What courses are offered?",
+        "Tell me about the programs available.",
+        "Courses available in the college.",
+        "Programs offered by the college.",
+        "Details on courses offered.",
+        "What programs can I enroll in?",
+        "List of courses in the college.",
+        "Available courses and programs.",
+        "Different courses offered.",
+        "Academic programs in the college."
+      ],
+      "responses": [
+        "Our college offers a wide range of undergraduate, postgraduate, and doctoral programs across various disciplines. For a detailed list of courses, please visit the academic programs section on our website.",
+        "You can choose from a variety of programs tailored to meet diverse academic and career interests.",
+        "We offer specialized courses in fields like engineering, business, sciences, arts, and more. Check out our course catalog online for more details."
+      ]
+    },
+    {
+      "tag": "college_library",
+      "patterns": [
+        "Tell me about the library.",
+        "What are the library facilities?",
+        "Library resources in the college.",
+        "Information on the college library.",
+        "Details about the library.",
+        "What can I find in the library?",
+        "Library services available.",
+        "How is the college library?",
+        "Library infrastructure.",
+        "Resources available in the library."
+      ],
+      "responses": [
+        "Our college library is equipped with a vast collection of books, journals, digital resources, and study spaces. For more information, you can visit the library section on our website or contact the library directly.",
+        "The library provides access to numerous academic databases, e-books, and research materials to support your studies.",
+        "You will find comfortable study areas, computer labs, and knowledgeable staff ready to assist with your research needs."
+      ]
+    },
+    {
+      "tag": "college_events",
+      "patterns": [
+        "Tell me about the annual sports day.",
+        "What events are held annually?",
+        "Information on college events.",
+        "Details about the cultural meet.",
+        "Annual events in the college.",
+        "What events does the college organize?",
+        "College sports day details.",
+        "Cultural meet information.",
+        "Upcoming events in the college.",
+        "Annual cultural meet details."
+      ],
+      "responses": [
+        "Our college hosts a variety of events throughout the year, including the annual sports day and cultural meet and the annual cultural meet showcases student talents in music, dance, drama, and more. It’s a highlight of our college calendar. For upcoming events and schedules, please visit the events section on our website"
+      ]
+    },
+    {
+      "tag": "food_dining",
+      "patterns": [
+        "What are the dining options on campus?",
+        "Tell me about the food options available.",
+        "Where can I eat on campus?",
+        "Campus food facilities.",
+        "Details about dining options.",
+        "Food and dining options on campus.",
+        "Where to eat on campus?",
+        "College dining facilities.",
+        "Information on food services.",
+        "Campus food options."
+      ],
+      "responses": [
+        "Our campus offers a variety of dining options, including cafeterias, food courts, and snack bars. For more information on food and dining facilities, please visit the campus life section on our website.",
+        "You can enjoy a wide range of cuisines at our on-campus dining facilities, catering to different tastes and dietary preferences.",
+        "The dining halls provide healthy and delicious meal options throughout the day, ensuring you have the energy to excel in your studies."
+      ]
+    },
+    {
+      "tag": "average_package",
+      "patterns": [
+        "What is the average package of the college?",
+        "Tell me about the placement packages.",
+        "Average salary offered to graduates.",
+        "What are the average placements like?",
+        "College average package details.",
+        "How much do students earn on average?",
+        "Placement package information.",
+        "What is the salary range for graduates?",
+        "Average placement package for students.",
+        "Details about average packages offered."
+      ],
+      "responses": [
+        "The overall average package for our college is between 4-6 LPA. The CSE department has an average package of 4-5 LPA, with the highest package being 23 LPA. The Chemical Engineering department boasts an average package of 5.5 LPA, with the highest package reaching 22 LPA. The Civil Engineering department has an average package of 5.75 LPA, with the highest package being 27 LPA. Finally, the ECE department has an average package of 5.5 LPA, with the highest package reaching 27 LPA.",
+        "On average, students from our college receive packages ranging from 4-6 LPA. Specifically, the CSE department averages 4-5 LPA, with top offers of 23 LPA. Chemical Engineering graduates see an average of 5.5 LPA, with top packages of 22 LPA. Civil Engineering averages 5.75 LPA, with a high of 27 LPA, and ECE department has an average package of 5.5 LPA, with the highest package of 27 LPA.",
+        "The average package for graduates across the college is 4-6 LPA. CSE graduates have an average of 4-5 LPA and a highest offer of 23 LPA. Chemical Engineering has an average of 5.5 LPA and a high of 22 LPA. Civil Engineering graduates average 5.75 LPA with top offers of 27 LPA, while ECE graduates also average of 5.5 LPA, with the highest offers reaching 27 LPA.",
+        "Graduates typically receive an average package between 4-6 LPA. The CSE department sees averages of 4-5 LPA, with the highest at 23 LPA. Chemical Engineering averages 5.5 LPA with top packages of 22 LPA. Civil Engineering averages 5.75 LPA with the highest at 27 LPA, and ECE averages 5.5 LPA with top offers reaching 27 LPA."
+      ]
+    }, 
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm sorry, I didn't understand that. Could you please rephrase your question?",
+        "I'm not sure what you mean. Can you provide more details?",
+        "I don't have information on that. Could you ask something else about HIT?"
+      ]
+    }, 
+    {
+      "tag": "principal_info",
+      "patterns": [
+        "Who is the principal of HIT?",
+        "Tell me about the principal of Haldia Institute of Technology",
+        "Who is Dr. Subrata Mondal?",
+        "Principal of Haldia Institute of Technology",
+        "Information about Dr. Subrata Mondal",
+        "Details about the principal of HIT",
+        "Who is leading HIT?",
+        "Who heads Haldia Institute of Technology?",
+        "Current principal of HIT"
+      ],
+      "responses": [
+        "The principal of Haldia Institute of Technology is Dr. Subrata Mondal. He is an esteemed academician and administrator with a significant contribution to the field of education and engineering. Under his leadership, HIT continues to strive for excellence in technical education and research."
+      ]
+    },
+    {
+      "tag": "chairman_info",
+      "patterns": [
+        "Who is the chairman of HIT?",
+        "Tell me about the chairman of Haldia Institute of Technology",
+        "Who is Lakshman Chandra Seth?",
+        "Chairman of Haldia Institute of Technology",
+        "Information about Lakshman Chandra Seth",
+        "Details about the chairman of HIT",
+        "Who is leading HIT?",
+        "Who heads Haldia Institute of Technology?",
+        "Current chairman of HIT"
+      ],
+      "responses": [
+        "The chairman of Haldia Institute of Technology is Lakshman Chandra Seth. He is a prominent figure known for his contributions to the educational and social sectors. Under his guidance, HIT has seen significant growth and development, maintaining its commitment to providing quality education."
+      ]
+    }
+
+
+  ]
+}
