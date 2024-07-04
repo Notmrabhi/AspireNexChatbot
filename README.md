@@ -8,6 +8,8 @@ Tech Stack Used
 4. NLTK (Natural Language Toolkit): Library for natural language processing, used for tokenization and preprocessing text data.
 5. HTML, CSS and JS - Used for creating the frontend of the web application, providing a user-friendly interface for interacting with the chatbot.
 
+## Technique Used - Pattern matching technique
+
 ## Initial Setup for Chatbot Deployment
 
 1. **Clone the Repository and Create a Virtual Environment**
