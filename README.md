@@ -60,4 +60,5 @@ Tech Stack Used
    $ (venv) python app.py
    ```
 
-7. **For the Demo of the project, watch the video tutorial linked below:**
+7. **For the Demo of the project, watch the video tutorial**
+   [Click](https://youtu.be/Ycsc2ugyIp0?si=J3q5oY9W9e78m9RH)
